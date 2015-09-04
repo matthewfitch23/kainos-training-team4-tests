@@ -1,16 +1,12 @@
 package api.com.kainos.training.api_selenium_test;
 
 import static org.junit.Assert.assertEquals;
-
 import java.util.List;
 import java.util.Random;
-
 import javax.ws.rs.core.Response;
-
 import org.junit.Test;
-
 import com.kainos.training.blackbox.client.FriendClient;
-import com.kainos.training.blackbox_interface.model.Person;
+import com.kainos.training.blackboxinterface.model.person.Person;
 
 public class FriendServiceApiTest {
 
