@@ -7,6 +7,8 @@ import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import ui.com.kainos.training.api_selenium_test.pages.FriendAddedPage;
+import ui.com.kainos.training.api_selenium_test.pages.FriendNotAddedPage;
 import ui.com.kainos.training.api_selenium_test.pages.HomePage;
 import ui.com.kainos.training.api_selenium_test.pages.LoginFailed;
 import ui.com.kainos.training.api_selenium_test.pages.LoginPage;
@@ -17,6 +19,8 @@ public class BaseTest {
 	protected static LoginPage loginPage;
 	protected static HomePage homePage;
 	protected static LoginFailed loginFailed;
+	protected static FriendAddedPage friendAddedPage;
+	protected static FriendNotAddedPage friendNotAddedPage;
 	
 	@BeforeClass
 	public static void setUpWebDriver() {
@@ -26,6 +30,8 @@ public class BaseTest {
 		loginPage = new LoginPage(driver);
 		homePage = new HomePage(driver);
 		loginFailed = new LoginFailed(driver);
+		friendAddedPage = new FriendAddedPage(driver);
+		friendNotAddedPage = new FriendNotAddedPage(driver);
 	}
 	
 	@AfterClass
