@@ -30,6 +30,8 @@ public class BaseTest {
 		loginPage = new LoginPage(driver);
 		homePage = new HomePage(driver);
 		loginFailed = new LoginFailed(driver);
+		friendAddedPage = new FriendAddedPage(driver);
+		friendNotAddedPage = new FriendNotAddedPage(driver);
 	}
 	
 	@AfterClass

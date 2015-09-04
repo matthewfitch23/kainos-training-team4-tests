@@ -9,7 +9,7 @@ public class HomePage {
 	private WebDriver driver;
 	
 	private static final By LOGIN_SUCCESS = By.id("message");
-	private static final By FRIEND_NAME_INPUT = By.id("friendNameInput");
+	private static final By FRIEND_NAME_INPUT = By.id("name");
 	
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
